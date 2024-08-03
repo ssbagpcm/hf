@@ -2,7 +2,7 @@
 from transformers import pipeline
 
 messages = [
-    {"role": "user", "content": "What is a blackhole ?"},
+    {"role": "user", "content": "Who are you?"},
 ]
-pipe = pipeline("text-generation", model="meta-llama/Meta-Llama-3.1-8B-Instruct")
+pipe = pipeline("text-generation", model="mistralai/Mixtral-8x7B-Instruct-v0.1")
 pipe(messages)
